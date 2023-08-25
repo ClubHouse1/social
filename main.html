@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="club.css">
+    <script type="text/javascript" src="club.js"></script>
+    <title>Chatroom</title>
+</head>
+<body>
+
+<header>
+    <h1>Test</h1>   
+</header>
+
+<div class="container">
+    <div class="video-container">
+        <!-- Video player could go here -->
+    </div>
+
+    <div class="chat-container">
+        <div class="chat-intro"></div>
+
+        <div id="loginSection">
+            <h2>Log In</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="authenticate()">Log In</button>
+        </div>
+
+        <div id="chatroomSection" style="display: none;">
+            <div id="chatMessages"></div>
+            <input type="text" id="messageInput" placeholder="Type your message...">
+            <input type="file" id="profilePictureInput">
+            <button onclick="sendMessage()">Send</button>
+            <button onclick="deleteSelectedMessages()">Delete Selected Messages</button>
+            <button onclick="logOut()">Log Out</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
